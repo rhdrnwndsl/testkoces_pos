@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CashActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/titlebg_gradient"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/toplogo1" />
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:text="현금IC"/>
+
+
+                    <Button
+                        android:id="@+id/cashic_btn_buy"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/segmentsubbtnleft_normal"
+                        android:text="@string/cashic_btn_buy"
+                        android:textColor="#7b28ef"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <Button
+                        android:id="@+id/cashic_btn_refund"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/segmentsubbtncenter_out"
+                        android:text="@string/cashic_btn_refund"
+                        android:textColor="#505050"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <Button
+                        android:id="@+id/cashic_btn_balance"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/segmentsubbtncenter_out"
+                        android:text="@string/cashic_btn_balance_inquiry"
+                        android:textColor="#505050"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <Button
+                        android:id="@+id/cashic_btn_buyinquiry"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/segmentsubbtncenter_out"
+                        android:text="@string/cashic_btn_purchase_inquiry"
+                        android:textColor="#505050"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <Button
+                        android:id="@+id/cashic_btn_refundinquiry"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/segmentsubbtnright_out"
+                        android:text="@string/cashic_btn_refund_inquiry"
+                        android:textColor="#505050"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cashic_trade_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/cashic_linear_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/txt_trade_money" />
+
+                        <EditText
+                            android:id="@+id/cashic_edt_money"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="6"
+                            android:background="@drawable/rectangle"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:maxLength="11"
+                            android:textAlignment="textEnd"
+                            android:textColor="#000000"
+                            tools:ignore="TouchTargetSizeCheck" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:text="@string/txt_won" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cashic_linear_txf"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/txt_tax_free" />
+
+                        <EditText
+                            android:id="@+id/cashic_edt_txf"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="6"
+                            android:background="@drawable/rectangle"
+                            android:ems="10"
+                            android:maxLength="11"
+                            android:textAlignment="textEnd"
+                            android:textColor="#000000"
+                            android:inputType="number" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:text="@string/txt_won" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/txt_original_money" />
+
+                        <TextView
+                            android:id="@+id/cashic_tvw_money"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:text="0"
+                            android:textAlignment="textEnd" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:text="@string/txt_won" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/txt_tax_money" />
+
+                        <TextView
+                            android:id ="@+id/cashic_tvw_vat"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:text="0"
+                            android:textAlignment="textEnd" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:text="@string/txt_won" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/cashic_linear_svc_auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/txt_service_money" />
+
+                        <TextView
+                            android:id ="@+id/cashic_tvw_svc"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:text="0"
+                            android:textAlignment="textEnd" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:text="@string/txt_won" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/cashic_linear_svc_manual"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/txt_service_money" />
+
+                        <EditText
+                            android:id="@+id/cashic_edt_svc"
+                            android:layout_width="0dp"
+                            android:layout_height="44dp"
+                            android:layout_weight="6"
+                            android:background="@drawable/rectangle"
+                            android:ems="10"
+                            android:maxLength="11"
+                            android:textColor="#000000"
+                            android:inputType="number" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:text="@string/txt_won" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="@string/txt_totalmoney" />
+
+                        <TextView
+                            android:id ="@+id/cashic_tvw_totalmoney"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textAlignment="textEnd" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:text="@string/txt_won" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cashic_canceltrade_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:text="@string/txt_approval_date1" />
+
+                        <TextView
+                            android:id="@+id/cashic_tvw_date"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:background="@drawable/rectangle"
+                            android:text="22.01.01"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/txt_approval_num" />
+
+                        <EditText
+                            android:id="@+id/cashic_edt_auno"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/rectangle"
+                            android:hint="@string/txt_creditcacnel_hint1"
+                            android:textColor="#000000"
+                            android:textAlignment="textEnd" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="@string/txt_creditcancel_money" />
+
+                        <EditText
+                            android:id="@+id/cashic_edt_cancelmoney"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="6"
+                            android:hint="@string/txt_creditcacnel_hint2"
+                            android:background="@drawable/rectangle"
+                            android:textColor="#000000"
+                            android:textAlignment="textEnd" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textAlignment="textEnd"
+                            android:text="@string/txt_won" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cashic_simpletrade_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/cashic_swt_trade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/cashic_txt_minimum_trade" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cashic_nocard_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/cashic_swt_nocard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/cashic_txt_no_card_cancel" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/cashic_btn_cashicpay"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button211221"
+                        android:text="@string/cashic_btn_trade"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/main2_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+            <!-- 내부테스트용버튼 지우면 활성화할것
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+                -->
+            <!-- 내부테스트용 버튼 -->
+            <Button
+                android:id="@+id/cashic_btn_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_goto_main"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cashic_btn_store_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="0.33"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_store_info"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cashic_btn_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_settiong"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

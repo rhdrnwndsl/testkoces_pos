@@ -1,0 +1,342 @@
+<resources>
+    <!-- 전체공유 -->
+    <string name="app_name">KocesICAPP</string>
+    <string name="txt_warning_rootingphone">루팅된 장비 입니다.</string>
+    <string name="btn_save">저장</string>
+    <string name="txt_ok">확인</string>
+    <string name="btn_exit">나가기</string>
+    <string name="txt_won">원</string>
+    <string name="txt_no">건</string>
+    <string name="txt_manwon">만원</string>
+    <string name="txt_percent">%</string>
+    <string name="txt_totalmoney">결제금액</string>
+    <string name="txt_progress_now">준비중입니다.</string>
+    <!-- 처음 장치 설정 화면 -->
+    <string name="txt_seldevice_usb">USB 유선 리더기</string>
+    <string name="txt_seldevice_ble">블루투스 리더기</string>
+    <string name="txt_seldevice_cat">CAT 단말기</string>
+    <!-- 상단_메뉴_탭 -->
+    <string name="tab_main">홈</string>
+    <string name="tab_store">가맹점\n설정</string>
+    <string name="tab_device">장치설정</string>
+    <string name="tab_manager">관리자\n설정</string>
+    <string name="tab_networkinfo">네트워크</string>
+    <string name="tab_verinfo">정보</string>
+    <string name="tab_storeinfo">매장정보</string>
+    <string name="tab_taxinfo">결제정보</string>
+    <string name="tab_printinfo">출력정보</string>
+
+    <!-- 사인결제창 -->
+    <string name="sign_name">서명을 해 주세요</string>
+    <string name="sign_request">고객 서명 중입니다</string>
+
+    <!-- 메인2_전체공유 -->
+    <string name="txt_postitle">KOCESICAPP</string>
+    <string name="txt_main2_icreader_id">카드리더기 식별번호</string>
+    <string name="txt_main2_appId">APP 식별 번호</string>
+    <string name="txt_main_password">비밀번호를 입력해 주세요</string>
+    <string name="txt_main2_tradeAcitivity">신용 / 현금 거래</string>
+    <string name="txt_main_guide1">    *장치 변경은 환경 설정에서 가능합니다</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- 상단_타이틀 -->
+    <string name="txt_set_title">환경설정</string>
+    <string name="txt_store_title">가맹점설정</string>
+    <string name="txt_storeInfo_title">가맹점정보</string>
+    <string name="txt_device_title">장치설정</string>
+    <string name="txt_classifi_title">무결성검증</string>
+    <string name="txt_application_title">APP 설정</string>
+    <string name="txt_payment_title">결제</string>
+    <string name="txt_manager_title">관리자설정</string>
+
+    <!-- 환경설정_화면 -->
+    <string name="btn_store_title">가맹점설정</string>
+    <string name="btn_device_title">장치설정</string>
+    <string name="btn_application_title">APP 설정</string>
+    <string name="btn_other_title">특수기능</string>
+    <string name="btn_manager_title">관리자설정</string>
+    <string name="btn_goto_main">메인화면</string>
+    <!-- 세금 설정 화면 -->
+    <string name="frg_tax_title">세금설정</string>
+    <string name="frg_tax_title_vat">부가세설정</string>
+    <string name="frg_tax_title_svc">봉사료설정</string>
+    <string name="frg_tax_title_txf">비과세설정</string>
+    <string name="frg_tax_title_installment">할부설정</string>
+    <string name="frg_tax_title_nosign">무서명설정</string>
+    <string name="frg_tax_title_fallback">FALLBACK설정</string>
+    <string name="frg_tax_vat_use">부가세적용</string>
+    <string name="frg_tax_vat_calc">부가세계산방식</string>
+    <string name="frg_tax_svc_use">봉사료적용</string>
+    <string name="frg_tax_use">사용</string>
+    <string name="frg_tax_unused">미사용</string>
+    <string name="frg_tax_included">포함</string>
+    <string name="frg_tax_notincluded">미포함</string>
+    <string name="frg_tax_auto">자동</string>
+    <string name="frg_tax_manual">통합</string>
+    <string name="frg_tax_manual1">수동</string>
+    <string name="frg_tax_save">세금 설정 저장</string>
+
+    <!-- 신용/현금_결제_화면 -->력
+    <string name="txt_trade_printout">영수증출력</string>
+    <string name="txt_trade_imagesave">이미지저장</string>
+    <string name="txt_trade_money">거래금액</string>
+    <string name="txt_original_money">공급가액</string>
+    <string name="txt_service_money">봉사료</string>
+    <string name="txt_tax_money">세금</string>
+    <string name="txt_tax_free">비과세</string>
+    <string name="txt_approval_num">원승인번호</string>
+    <string name="txt_approval_date">원승인일자</string>
+    <string name="txt_approval_date1">원거래일자</string>
+    <string name="txt_installment">할부</string>
+    <string name="txt_installment_select">할부선택</string>
+    <string name="txt_installment_months">할부 개월 수</string>
+    <string name="txt_cash_receipt">현금영수증</string>
+    <string name="txt_cssh_use_cashreceiptcard">현금영수증카드사용</string>
+    <string name="txt_credit_pay">카드결제</string>
+    <string name="txt_easy_pay">간편결제</string>
+    <string name="txt_use_classific">용도구분</string>
+    <string name="txt_pay_method">결제방법</string>
+    <string name="txt_reason_cancel">취소사유</string>
+    <string name="txt_ic_reason_cancel">IC취소사유</string>
+    <string name="txt_listner_msg">응답메시지</string>
+    <string name="txt_cash_num">고객번호</string>
+    <string name="btn_credit">신용</string>
+    <string name="btn_cash">현금</string>
+    <string name="btn_card_insert">카드넣기</string>
+    <string name="btn_card_delete">카드빼기</string>
+    <string name="btn_card_eraser">지우기</string>
+    <string name="txt_creditcacnel_hint2">취소 금액을 입력해 주세요</string>
+    <string name="txt_creditcacnel_hint1">원승인번호를 입력해 주세요</string>
+    <string name="txt_creditcancel_money">취소금액</string>
+    <string name="txt_creditcancel_trade_cancle">카드취소</string>
+    <string name="txt_cashcancel_trade_cancle">현금취소</string>
+    <!-- 가맹점_설정_화면 -->
+    <string name="txt_store_setting">가맹점설정</string>
+    <string name="txt_tid_setting">TID</string>
+    <string name="txt_business_num">사업자번호</string>
+    <string name="txt_sn_setting">SN</string>
+    <string name="btn_reregist">재등록</string>
+    <string name="btn_store_info">가맹점정보</string>
+    <string name="btn_store_regist">가맹점등록</string>
+    <string name="btn_set_down">등록다운로드</string>
+    <string name="txt_store_info">가맹점정보</string>
+    <string name="txt_store_name">가맹점명</string>
+    <string name="txt_store_phone">전화번호</string>
+    <string name="txt_store_addr">가맹점주소</string>
+    <string name="txt_store_owner">대표자명</string>
+    <string name="txt_store_edit">정보수정</string>
+    <string name="txt_store_serial">시리얼번호</string>
+    <string name="btn_store_serial">장치시리얼</string>
+    <string name="txt_tid_info">TID</string>
+    <string name="btn_gotoStoreAllActivity">전체보기</string>
+    <string name="txt_trade_method"> 거래방식</string>
+    <string name="txt_trade_error">오류발급</string>
+    <string name="txt_trade_error_etc">기타</string>
+
+    <!-- 장치_설정_화면 -->
+    <string name="txt_port_title">포트설정</string>
+    <string name="txt_trade_option"> 거래방식</string>
+    <string name="txt_card_reader">카드리더기</string>
+    <string name="txt_sign_pad">서명\n패드</string>
+    <string name="txt_multi_pad">멀티서명패드</string>
+    <string name="txt_pad_size">터치서명크기</string>
+    <string name="txt_print_cat">프린터/CAT</string>
+    <string name="btn_connect_check">연결확인</string>
+    <string name="txt_signpad_function">서명패드 기능</string>
+    <string name="txt_rf_nfc_mst">RF/NFC/MST</string>
+    <string name="txt_frg_dev_serial">시리얼 장치</string>
+    <string name="txt_frg_dev_ble">BLE</string>
+    <string name="txt_frg_dev_cat">CAT</string>
+    <string name="txt_touch_monitor">터치모니터</string>
+    <string name="txt_dual_monitor">듀얼모니터</string>
+    <string name="txt_resolution">해상도</string>
+    <string name="btn_key_reset">키갱신</string>
+    <string name="btn_classfi_check">무결성검증</string>
+    <string name="btn_upgrade_reader">펌웨어업데이트</string>
+    <string name="btn_rescan_device">장치 재검색</string>
+
+
+    <!-- app_설정_화면 -->
+    <string name="txt_app_set">APP 설정</string>
+    <string name="txt_use_popup">팝업사용유무</string>
+    <string name="txt_sign_time">서명자동 전송시간</string>
+    <string name="txt_insert_card_time">카드입력 대기시간</string>
+    <string name="txt_no_sign_money">무서명금액</string>
+    <string name="txt_new_app_noti">APP 최신버전 알림</string>
+    <string name="txt_bmp_sign">BMP SIGN</string>
+    <string name="btn_folder_set">폴더설정</string>
+
+    <!-- 특수_기능_화면 -->
+    <string name="txt_other_set">특수기능 설정</string>
+    <string name="txt_use_fallback">FALLBACK 사용유무</string>
+
+
+    <!-- 관리자_설정_화면 -->
+    <string name="txt_server_set">SERVER 설정</string>
+    <string name="txt_ip_set">IP</string>
+    <string name="txt_port_set">PORT</string>
+    <string name="txt_ip">211.192.167.38</string>
+    <string name="txt_port">10555</string>
+    <string name="txt_hw_test">H/W TEST</string>
+    <string name="txt_reader_test">카드\n리더기</string>
+    <string name="btn_reset">초기화</string>
+    <string name="btn_ic_set">IC</string>
+    <string name="btn_ms_set">MS</string>
+    <string name="btn_insert_card">카드넣기</string>
+    <string name="btn_delete_card">카드빼기</string>
+    <string name="btn_status_check">상태\n체크</string>
+    <string name="btn_request_sign">서명\n요청</string>
+    <string name="btn_request_key">KEY요청</string>
+    <string name="btn_request_consumer">고객\n번호</string>
+    <string name="btn_request_passwd">비밀\n번호</string>
+    <string name="btn_request_qr">QR</string>
+    <string name="txt_print_test">프린트</string>
+    <string name="btn_print">PRINT</string>
+    <string name="btn_logo">LOGO</string>
+    <string name="btn_cut">CUT</string>
+
+    <!-- 장치설정_무결성검증화면 -->
+    <string name="txt_date_check">조회일자</string>
+    <string name="txt_andand">~</string>
+    <string name="btn_date_check">조회</string>
+    <string name="txt_count_number">번호</string>
+    <string name="txt_date_number">일자</string>
+    <string name="txt_date_result">결과</string>
+    <string name="txt_date_sort">구분</string>
+
+
+    <!-- ble 설정 화면 -->
+    <string name="frgble_isConnected">BLE 연결 상태 :</string>
+    <string name="frgble_Connect">BLE 연결</string>
+    <string name="frgble_DisConnect">연결해제</string>
+    <string name="frgble_save">BLE 설정 저장</string>
+    <string name="frgble_Name">BLE 장치 이름 :</string>
+    <string name="frgble_bleproductnumber">제품식별번호</string>
+    <string name="frgble_bleproductserial">시리얼번호</string>
+    <string name="frgble_bleproductversion">버전</string>
+    <string name="frgble_power">전원저장</string>
+    <!-- 가맹점설정_가맹점정보화면 -->
+    <string name="txt_info_num">순번</string>
+    <string name="txt_info_tid">TID</string>
+    <string name="txt_info_business_num">사업자번호</string>
+    <string name="btn_select_del">선택삭제</string>
+    <string name="btn_all_del">전체삭제</string>
+
+    <!-- 영수증_출력화면 -->
+    <string name="btn_cancel_payment">결제취소</string>
+    <string name="btn_print_receipt">영수증프린트</string>
+    <string name="btn_send_receipt">영수증내보내기</string>
+    send_receipt
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_settiong">환경 설정</string>
+    <string name="popup_store_regist">가맹점 등록중 입니다.</string>
+    <string name="txt_bmp_filepath">"사인데이터 저장 위치 "</string>
+
+    <!-- 에러 메세지 관련 문자열 -->
+    <string name="error_store_Business_number_length_is_not_correct">사업자 번호 길이가 맞지 않습니다</string>
+    <string name="error_store_Tid_number_length_is_not_correct">TID 길이가 맞지 않습니다</string>
+    <string name="error_store_Serial_number_length_is_not_correct">시리얼 번호 길이가 맞지 않습니다</string>
+    <string name="error_There_are_no_devices_connected_to_this_device">연결된 장치를 찾을 수 없습니다</string>
+    <string name="error_input_wrong_Payment_total_money">입력한 금액은 처리 할 수 없습니다.</string>
+    <string name="error_input_wrong_Payment_installment">입력한 할부는 처리 할 수 없습니다.</string>
+    <string name="error_need_input_user_cash_recipt_number">고객번호를 입력하세요</string>
+    <string name="error_Check_approval_number_date">원승인번호, 원승인일자를 확인 해 주세요</string>
+    <string name="error_fail_ICVerify">무결성검증에 실패하였습니다.\n A/S 를 접수해 주세요</string>
+    <string name="error_need_device_setting">환경 설정에서 장비 설정이 필요 합니다</string>
+    <string name="error_no_device">연결된 장치를 찾을 수 없습니다</string>
+    <string name="error_no_data_tid">가맹점설정을 확인해 주세요</string>
+    <string name="error_cancel_trade">거래가 취소 되었습니다.</string>
+    <string name="error_noexist_tid_or_incorrect">등록된 TID가 없거나 등록된 TID와 다릅니다.</string>
+    <string name="error_noline_qr_reader">현재 qr리더는 앱 카메라로 설정되었습니다</string>
+    <!-- 메세지 박스 관련 문자열 -->
+    <string name="msgbox_regist_n_download_store">가맹점 등록 중입니다.</string>
+    <string name="btn_cancel">취소</string>
+    <string name="btn_eraser">지우기</string>
+    <string name="btn_input">입력</string>
+    <string name="txt_tax1">세금</string>
+    <string name="txt_serviceCharge">봉사료</string>
+    <string name="txt_taxfree">비과세</string>
+    <string name="btn_minimum">최소화</string>
+    <string name="title_activity_menu2">menu2Activity</string>
+
+    <!-- 최초장치설정_화면 -->
+    <string-array name="spinner_device_set">
+        <item>"BLE"</item>
+        <item>"CAT"</item>
+        <item>"유선"</item>
+    </string-array>
+
+    <!-- 거래내역 설정 화면 -->
+    <string name="txt_trade_title">거래내역</string>
+    <string name="txt_trade_date">일시</string>
+    <string name="txt_trade_type">종류</string>
+    <string name="txt_trade_cancel">승인\n취소</string>
+    <string name="txt_trade_cancel1">거래취소</string>
+    <string name="txt_trade_exit">확인</string>
+    <string name="txt_trade_all">전체</string>
+    <string name="txt_trade_day">당일</string>
+    <string name="txt_trade_month">당월</string>
+    <string name="txt_trade_credit">카드</string>
+    <string name="txt_trade_cash">현금</string>
+    <string name="txt_trade_easy">간편</string>
+    <string name="txt_trade_etc">현금IC</string>
+    <string name="txt_trade_search">조회</string>
+
+    <!-- 현금 IC-->
+    <string name="cashic_btn_buy">구매</string>
+    <string name="cashic_btn_refund">환불</string>
+    <string name="cashic_btn_balance_inquiry">잔액조회</string>
+    <string name="cashic_btn_purchase_inquiry">구매조회</string>
+    <string name="cashic_btn_refund_inquiry">환불조회</string>
+    <string name="cashic_txt_money">조회/취소금액</string>
+    <string name="cashic_txt_minimum_trade">간소회거래여부</string>
+    <string name="cashic_txt_no_card_cancel">무카드취소</string>
+    <string name="cashic_btn_trade">현금IC거래</string>
+
+    <!-- 우심 -->
+    <string name="toast_bt_na">bluetooth is not available</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth print.</string>
+    <string name="connect_fail">Unable to connect device</string>
+    <string name="connect_lost">Device connection was lost</string>
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="scanning">scanning for devices....</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_found">No devices found</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="warn_timeout">Connection is not available.\nData sending is cancelled.</string>
+
+    <string name="sample_print">Sample Printing</string>
+    <string name="receipt">Receipt</string>
+    <string name="image">Image</string>
+    <string name="text_print">ASCII Text Printing</string>
+    <string name="edit_text">Enter sample text</string>
+    <string name="print">Print</string>
+    <string name="emphasis">Emphasis</string>
+    <string name="underline">Underline</string>
+    <string name="charsize">Character Size</string>
+    <string name="justification">Justification</string>
+    <string name="left">Left</string>
+    <string name="center">Center</string>
+    <string name="right">Right</string>
+    <string name="sample_barcode">Sample Barcode Printing</string>
+    <string name="barcode_1d">1D barcodes</string>
+    <string name="barcode_2d">2D barcodes</string>
+    <string name="barcode_gs1">GS1 databars</string>
+    <string name="msr_mode_setting">MSR Mode Setting</string>
+    <string name="track23">2 Track Mode</string>
+    <string name="track123">3 Track Mode</string>
+    <string name="msr_cancel">Cancel MSR Mode</string>
+    <string name="msr_clear">Clear Track Info</string>
+    <string name="msr_1track">1st Track</string>
+    <string name="msr_2track">2nd Track</string>
+    <string name="msr_3track">3rd Track</string>
+</resources>

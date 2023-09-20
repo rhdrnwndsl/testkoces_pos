@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- Needed only if your app uses Bluetooth scan results to derive physical location. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+<!--    <uses-permission android:name="android.permission.CALL_PHONE" />-->
+    <uses-permission android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.USB_PERMISSION" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+<!--    <uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    
+    <uses-feature android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:icon="@mipmap/ic_app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_app_icon_round"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:directBootAware="true">
+        <activity
+            android:name=".CreditLoadingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"/>
+        <activity
+            android:name=".EasyLoadingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"/>
+<!--        <activity-->
+<!--            android:name=".sdk.ProgressBarDialog"-->
+<!--            android:configChanges="orientation|keyboardHidden|screenSize"-->
+<!--            android:exported="false" />-->
+        <activity
+            android:name=".CashICActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".CashCancelActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".CreditCancelActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".OtherPayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".SalesInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".TradeListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".CashLoadingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"/>
+        <activity
+            android:name=".CashICLoadingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"/>
+        <activity
+            android:name=".ReceiptEasyActivity"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".ReceiptCreditActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".ReceiptCashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".EasyPayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".CreditActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".CashActivity2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent2"/>
+        <activity
+            android:name=".StoreInfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:enabled="true"
+            android:exported="true"
+            android:theme="@style/Transparent2" />
+
+        <service
+            android:name=".sdk.USBSerialService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service android:name=".sdk.ForecdTerminationService"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name=".PrefpasswdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".menu2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/title_activity_menu2"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".StoreMenuActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:label="@string/title_activity_menu2"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".AppToAppActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:directBootAware="true"
+            android:theme="@style/Transparent">
+            <intent-filter>
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />-->
+<!--                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />-->
+<!--                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+
+
+<!--            <meta-data-->
+<!--                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"-->
+<!--                android:resource="@xml/device_filter" />-->
+<!--            <meta-data-->
+<!--                android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"-->
+<!--                android:resource="@xml/device_filter" />-->
+<!--            <meta-data-->
+<!--                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"-->
+<!--                android:resource="@xml/device_filter" />-->
+        </activity>
+        <activity android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:exported="true"
+            tools:replace="screenOrientation"/>
+        <activity
+            android:name=".PopupActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Transparent" />
+        <activity android:name=".OtherActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:theme="@style/Transparent" />
+        <activity
+            android:name=".SignPadActivity"
+            android:exported="true"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:directBootAware="true"
+            android:label="@string/app_name"
+            android:theme="@style/Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_DETACHED" />
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_DETACHED"
+                android:resource="@xml/device_filter" />
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/device_filter" />
+        </activity> <!-- <receiver -->
+        <!-- android:name=".sdk.StartReceiver" -->
+        <!-- android:enabled="true" -->
+        <!-- android:exported="false"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+        <service
+            android:name=".sdk.ble.BluetoothLeService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

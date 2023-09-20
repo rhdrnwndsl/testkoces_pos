@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/txt_count_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:ems="1"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/txt_tid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:ems="4"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/txt_business_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.45"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:ems="4"
+            android:text="TextView" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

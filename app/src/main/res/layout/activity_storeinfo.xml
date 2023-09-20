@@ -1,0 +1,1839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".StoreInfoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:background="@drawable/bg1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/titlebg_gradient"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/txt_storeInfo_title"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!-- 여기서 부터 대표사업자,
+                    서브사업자1,
+                    서브사업자2,
+                    서브사업자3,
+                    서브사업자4,
+                    서브사업자5 -->
+                    <!-- 여기서 부터 대표사업자 -->
+                    <LinearLayout
+                        android:id="@+id/store_linear_store_00"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:gravity="center_vertical"
+                                android:text="대표사업자정보"
+                                android:textColor="#090909" />
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"/>
+                            <ImageButton
+                                android:id="@+id/store_btn_down"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                                android:background="@android:color/white"
+                                android:tint="@color/colorAccent"
+                                android:src="@drawable/ic_baseline_arrow_drop_down_24"/>
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="100dp"
+                            android:background="#000000" />
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_table_store_00"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="TID"
+                                android:textColor="#000000" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_tid"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/textView19"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_info_business_num"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_bsn"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_name"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storename"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/textView27"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_phone"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storephone"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/textView29"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_addr"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeaddr"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:id="@+id/textView31"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_owner"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeowner"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_btn_store_00"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp">
+
+                        <TableRow android:layout_weight="1">
+
+                            <View
+                                android:id="@+id/view11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <View
+                                android:id="@+id/view12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <Button
+                                android:id="@+id/storeinfo_btn_edit"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/buttonround211221"
+                                android:text="@string/txt_store_edit"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                    <!-- 여기까지 대표사업자 -->
+
+                    <!-- 여기서부터 서브사업자1 -->
+                    <LinearLayout
+                        android:id="@+id/store_linear_store_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:gravity="center_vertical"
+                            android:text="서브사업자정보 1"
+                            android:textColor="#090909" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="100dp"
+                            android:background="#000000" />
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_table_store_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="TID"
+                                android:textColor="#000000" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_tid_01"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_info_business_num"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_bsn_01"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_name"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storename_01"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_phone"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storephone_01"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_addr"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeaddr_01"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_owner"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeowner_01"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_btn_store_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp">
+
+                        <TableRow android:layout_weight="1">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <Button
+                                android:id="@+id/storeinfo_btn_edit_01"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/buttonround211221"
+                                android:text="@string/txt_store_edit"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                    <!-- 여기까지 서브사업자1 -->
+
+                    <!-- 여기서부터 서브사업자2 -->
+                    <LinearLayout
+                        android:id="@+id/store_linear_store_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:gravity="center_vertical"
+                            android:text="서브사업자정보 1"
+                            android:textColor="#090909" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="100dp"
+                            android:background="#000000" />
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_table_store_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="TID"
+                                android:textColor="#000000" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_tid_02"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_info_business_num"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_bsn_02"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_name"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storename_02"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_phone"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storephone_02"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_addr"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeaddr_02"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_owner"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeowner_02"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_btn_store_02"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp">
+
+                        <TableRow android:layout_weight="1">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <Button
+                                android:id="@+id/storeinfo_btn_edit_02"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/buttonround211221"
+                                android:text="@string/txt_store_edit"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                    <!-- 여기까지 서브사업자2 -->
+
+                    <!-- 여기서부터 서브사업자3 -->
+                    <LinearLayout
+                        android:id="@+id/store_linear_store_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:gravity="center_vertical"
+                            android:text="서브사업자정보 1"
+                            android:textColor="#090909" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="100dp"
+                            android:background="#000000" />
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_table_store_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="TID"
+                                android:textColor="#000000" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_tid_03"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_info_business_num"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_bsn_03"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_name"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storename_03"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_phone"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storephone_03"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_addr"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeaddr_03"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_owner"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeowner_03"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_btn_store_03"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp">
+
+                        <TableRow android:layout_weight="1">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <Button
+                                android:id="@+id/storeinfo_btn_edit_03"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/buttonround211221"
+                                android:text="@string/txt_store_edit"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                    <!-- 여기까지 서브사업자3 -->
+
+                    <!-- 여기서부터 서브사업자4 -->
+                    <LinearLayout
+                        android:id="@+id/store_linear_store_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:gravity="center_vertical"
+                            android:text="서브사업자정보 1"
+                            android:textColor="#090909" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="100dp"
+                            android:background="#000000" />
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_table_store_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="TID"
+                                android:textColor="#000000" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_tid_04"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_info_business_num"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_bsn_04"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_name"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storename_04"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_phone"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storephone_04"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_addr"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeaddr_04"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_owner"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeowner_04"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_btn_store_04"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp">
+
+                        <TableRow android:layout_weight="1">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <Button
+                                android:id="@+id/storeinfo_btn_edit_04"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/buttonround211221"
+                                android:text="@string/txt_store_edit"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                    <!-- 여기까지 서브사업자4 -->
+
+                    <!-- 여기서부터 서브사업자5 -->
+                    <LinearLayout
+                        android:id="@+id/store_linear_store_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:gravity="center_vertical"
+                            android:text="서브사업자정보 1"
+                            android:textColor="#090909" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="100dp"
+                            android:background="#000000" />
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_table_store_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="TID"
+                                android:textColor="#000000" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_tid_05"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_info_business_num"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_bsn_05"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_name"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storename_05"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_phone"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storephone_05"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_addr"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeaddr_05"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_weight="1"
+                            android:background="@drawable/rectangle"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:background="#ffffff"
+                                android:gravity="center"
+                                android:text="@string/txt_store_owner"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="wrap_content"
+                                android:background="#dcdcdc" />
+
+                            <TextView
+                                android:id="@+id/storeinfo_tvw_storeowner_05"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6.5"
+                                android:background="#ffffff"
+                                android:text=""
+                                android:textColor="#090909" />
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/store_btn_store_05"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:padding="5dp">
+
+                        <TableRow android:layout_weight="1">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="4" />
+
+                            <Button
+                                android:id="@+id/storeinfo_btn_edit_05"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/buttonround211221"
+                                android:text="@string/txt_store_edit"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                    </TableLayout>
+                    <!-- 여기까지 서브사업자5 -->
+
+                    <!-- 여기까지 대표사업자,
+                    서브사업자1,
+                    서브사업자2,
+                    서브사업자3,
+                    서브사업자4,
+                    서브사업자5 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="9"
+                            android:gravity="center_vertical"
+                            android:text="가맹점 다운로드"
+                            android:textColor="#090909" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginRight="100dp"
+                            android:background="#000000" />
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp">
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <TextView
+                                android:id="@+id/textView40"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/rectangle"
+                                android:gravity="center"
+                                android:text="복수가맹점"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5" />
+
+                            <Switch
+                                android:id="@+id/store_switch_multi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <TextView
+                                android:id="@+id/textView34"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/rectangle"
+                                android:gravity="center"
+                                android:text="TID"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:id="@+id/view13"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5" />
+
+                            <EditText
+                                android:id="@+id/storeinfo_edt_tid"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+                                android:background="@drawable/rectangle"
+
+                                android:ems="10"
+                                android:inputType="number"
+                                android:textColor="#090909" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <TextView
+                                android:id="@+id/textView36"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/rectangle"
+                                android:gravity="center"
+                                android:text="@string/txt_info_business_num"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:id="@+id/view14"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5" />
+
+                            <EditText
+                                android:id="@+id/storeinfo_edt_bsn"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="7"
+
+                                android:background="@drawable/rectangle"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:textColor="#090909" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp">
+
+                            <TextView
+                                android:id="@+id/textView38"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="@drawable/rectangle"
+                                android:gravity="center"
+                                android:text="@string/txt_store_serial"
+                                android:textColor="#090909" />
+
+                            <View
+                                android:id="@+id/view15"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5" />
+
+                            <EditText
+                                android:id="@+id/storeinfo_edt_srl"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:background="@drawable/rectangle"
+
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:text=""
+                                android:textColor="#090909" />
+
+                            <Button
+                                android:id="@+id/storeinfo_btn_getsrl"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:background="@drawable/button211221"
+                                android:text="@string/btn_store_serial"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:padding="5dp">
+
+                            <View
+                                android:id="@+id/view17"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2" />
+
+                            <Button
+                                android:id="@+id/storeinfo_btn_regist"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="6"
+                                android:background="@drawable/buttonround211221"
+                                android:text="@string/btn_store_regist"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <View
+                                android:id="@+id/view16"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2" />
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/storeinfo_btn_gotomain"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_goto_main"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/storeinfo_btn_storeInfo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="0.33"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_store_info"
+                android:textColor="#FF0000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/storeinfo_btn_env"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_settiong"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

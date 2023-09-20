@@ -1,0 +1,99 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".DeviceReaderActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B7DEE8"
+            android:gravity="center_vertical"
+            android:text="@string/txt_classifi_title"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/txt_count_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/txt_count_number"
+            android:ems="2"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/txt_date_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/txt_date_number"
+            android:ems="4"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/txt_date_result"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/txt_date_result"
+            android:ems="2"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/txt_date_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/txt_date_sort"
+            android:ems="2"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_date"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btn_gotoDevice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/btn_exit" />
+        <Button
+            android:id="@+id/btn_classfi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/btn_classfi_check" />
+    </LinearLayout>
+
+
+</LinearLayout>

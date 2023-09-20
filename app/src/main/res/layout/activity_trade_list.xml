@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".TradeListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:text="@string/txt_trade_title" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/trade_btn_dateday"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segmentbtnleft_normal"
+                    android:text="@string/txt_trade_day"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/trade_btn_datemonth"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segmentbtncenter_out"
+                    android:text="@string/txt_trade_month"
+                    android:textColor="#0f74fa"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <Button
+                    android:id="@+id/trade_btn_dateall"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segmentbtnright_out"
+                    android:text="@string/txt_trade_all"
+                    android:textColor="#0f74fa"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <View
+                    android:layout_width="30dp"
+                     android:layout_height="match_parent"/>
+                <TextView
+                    android:id="@+id/trade_tvw_startdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:gravity="center|center_vertical"
+                    android:background="@drawable/rectangle"
+                    android:text="TextView" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="~" />
+
+                <TextView
+                    android:id="@+id/trade_tvw_enddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="2"
+                    android:gravity="center|center_vertical"
+                    android:background="@drawable/rectangle"
+                    android:text="TextView" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/trade_btn_typeall"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segmentsubbtnleft_normal"
+                    android:text="@string/txt_trade_all"
+                    android:textColor="#7b28ef"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <Button
+                    android:id="@+id/trade_btn_typecredit"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segmentsubbtncenter_out"
+                    android:text="@string/txt_trade_credit"
+                    android:textColor="#505050"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <Button
+                    android:id="@+id/trade_btn_typecash"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segmentsubbtncenter_out"
+                    android:text="@string/txt_trade_cash"
+                    android:textColor="#505050"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <Button
+                    android:id="@+id/trade_btn_typeeasy"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segmentsubbtncenter_out"
+                    android:text="@string/txt_trade_easy"
+                    android:textColor="#505050"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <Button
+                    android:id="@+id/trade_btn_typeetc"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/segmentsubbtnright_out"
+                    android:text="@string/txt_trade_etc"
+                    android:textColor="#505050"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <View
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/trade_btn_search"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button211221"
+                    android:text="@string/txt_trade_search"
+                    android:textColor="#ffffff"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/txt_trade_date" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/txt_trade_money" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/txt_trade_type" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/txt_trade_cancel" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="4dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/under_line"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:id="@+id/trade_tbl_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+        <!-- 내부테스트용버튼 지우면 활성화할것
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+            -->
+        <!-- 내부테스트용 버튼 -->
+        <Button
+            android:id="@+id/trade_btn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:background="@drawable/button211221"
+            android:text="@string/btn_goto_main"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/trade_btn_store_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="0.33"
+            android:background="@drawable/button211221"
+            android:text="@string/btn_store_info"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/trade_btn_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.34"
+            android:background="@drawable/button211221"
+            android:text="@string/btn_settiong"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

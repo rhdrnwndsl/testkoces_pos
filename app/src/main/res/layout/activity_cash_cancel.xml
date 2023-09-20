@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CashCancelActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/titlebg_gradient"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/toplogo1" />
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:text="@string/txt_approval_date1" />
+
+                    <TextView
+                        android:id="@+id/cashcancel_tvw_date"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:background="@drawable/rectangle"
+                        android:text="22.01.01"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_approval_num" />
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/cashcancel_edt_auno"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_weight="7"-->
+<!--                        android:background="@drawable/rectangle"-->
+<!--                        android:hint="@string/txt_creditcacnel_hint1"-->
+<!--                        android:textAlignment="textEnd" />-->
+                    <EditText
+                        android:id="@+id/cashcancel_edt_auno"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="7"
+                        android:background="@drawable/rectangle"
+                        android:textColor="#000000"
+                        android:inputType="number"
+                        android:textAlignment="textEnd" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_creditcancel_money" />
+
+                    <EditText
+                        android:id="@+id/cashcancel_edt_money"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="6"
+                        android:inputType="number"
+                        android:background="@drawable/rectangle"
+                        android:textColor="#000000"
+                        android:textAlignment="textEnd" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:text="@string/txt_won" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/cashcancel_edt_money"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_weight="7"-->
+<!--                        android:hint="@string/txt_creditcacnel_hint2"-->
+<!--                        android:background="@drawable/rectangle"-->
+<!--                        android:textAlignment="textEnd" />-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/txt_reason_cancel" />
+
+                    <Button
+                        android:id="@+id/cashcancel_btn_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/segmentbtnleft_normal"
+                        android:text="@string/txt_trade_cancel1"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/cashcancel_btn_error"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/segmentbtncenter_out"
+                        android:text="@string/txt_trade_error"
+                        android:textColor="#0f74fa" />
+
+                    <Button
+                        android:id="@+id/cashcancel_btn_error_etc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/segmentbtnright_out"
+                        android:text="@string/txt_trade_error_etc"
+                        android:textColor="#0f74fa" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="@string/txt_cash_receipt" />
+
+                    <Button
+                        android:id="@+id/cashcancel_btn_private"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/segmentbtnleft_normal"
+                        android:text="개인"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/cashcancel_btn_business"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/segmentbtncenter_out"
+                        android:text="사업자"
+                        android:textColor="#0f74fa" />
+
+                    <Button
+                        android:id="@+id/cashcancel_btn_self"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/segmentbtnright_out"
+                        android:text="자진발급"
+                        android:textColor="#0f74fa" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Switch
+                        android:id="@+id/cashcancel_swt_msr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/txt_cssh_use_cashreceiptcard" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cashcancel_linear_customnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_cash_num" />
+
+                    <EditText
+                        android:id="@+id/cashcancel_edt_authnum"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="7"
+                        android:background="@drawable/rectangle"
+                        android:ems="10"
+                        android:maxLength="11"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:inputType="number" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/cashcancel_btn_cashpay"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button211221"
+                        android:text="@string/txt_cashcancel_trade_cancle"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/main2_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+            <!-- 내부테스트용버튼 지우면 활성화할것
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+                -->
+            <!-- 내부테스트용 버튼 -->
+            <Button
+                android:id="@+id/cashcancel_btn_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_goto_main"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cashcancel_btn_store_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="0.33"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_store_info"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cashcancel_btn_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_settiong"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

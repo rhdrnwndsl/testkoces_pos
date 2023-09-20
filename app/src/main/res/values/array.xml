@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 신용/현금_결제_화면 -->
+    <string-array name="spinner_use_classific">
+        <item>사용안함</item>
+        <item>개인</item>
+        <item>법인</item>
+        <item>자진발급</item>
+    </string-array>
+    <string-array name="spinner_pay_method">
+        <item>카드결제</item>
+        <item>번호입력</item>
+    </string-array>
+    <string-array name="spinner_reason_cancel">
+        <item>사용안함</item>
+        <item>거래취소</item>
+        <item>오류발급</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="spinner_ic_reason_cancel">
+        <item>사용안함</item>
+        <item>사용자취소</item>
+        <item>단말EOT수신오류망취소</item>
+        <item>ICchip카드거절취소</item>
+        <item>직전취소</item>
+        <item>거래고유키취소</item>
+    </string-array>
+
+    <!-- 가맹점설정_화면 -->
+    <string-array name="spinner_trade_method">
+        <item>카드리더기</item>
+        <item>멀티패드</item>
+    </string-array>
+
+    <!-- 장치설정_화면 -->
+    <string-array name="spinner_trade_option">
+        <item>카드리더기</item>
+    <!--    <item>BLE</item> -->
+    <!--    <item>CAT</item> -->
+    </string-array>
+    <string-array name="spinner_card_reader">
+        <item>사용안함</item>
+    </string-array>
+    <string-array name="spinner_signpad">
+        <item>사용안함</item>
+    </string-array>
+    <string-array name="spinner_multipad">
+        <item>사용안함</item>
+        <item>사용</item>
+    </string-array>
+    <string-array name="spinner_padsize">
+        <item>팝업</item>
+    </string-array>
+    <string-array name="spinner_padType">
+        <item>사용안함</item>
+        <item>서명패드</item>
+        <item>멀티서명패드</item>
+        <item>터치서명</item>
+    </string-array>
+    <string-array name="spinner_ICType">
+        <item>카드리더기</item>
+        <item>멀티패드</item>
+    </string-array>
+    <string-array name="spinner_rf_nfc_mst">
+        <item>미사용</item>
+        <item>사용</item>
+    </string-array>
+    <string-array name="spinner_touch_monitor">
+        <item>미사용</item>
+        <item>사용</item>
+    </string-array>
+    <string-array name="spinner_dual_monitor">
+        <item>미사용</item>
+        <item>사용</item>
+    </string-array>
+    <string-array name="spinner_resolution">
+        <item>일반</item>
+        <item>전체화면</item>
+    </string-array>
+    <string-array name="spinner_line_qr_reader">
+        <item>카메라</item>
+        <item>카드리더기</item>
+        <item>서명패드</item>
+    </string-array>
+    <string-array name="spinner_touch_signpad_size">
+        <item>전체</item>
+        <item>보통</item>
+        <item>작게</item>
+    </string-array>
+    <string-array name="spinner_ble_power_manage">
+        <item>상시유지</item>
+        <item>5분</item>
+        <item>10분</item>
+    </string-array>
+    <string-array name="spinner_cat_qr_reader">
+        <item>카메라</item>
+        <item>CAT단말기</item>
+    </string-array>
+
+    <!-- app설정_화면 -->
+    <string-array name="spinner_use_popup">
+        <item>사용</item>
+        <item>사용안함</item>
+    </string-array>
+    <string-array name="spinner_sign_time">
+        <item>1초</item>
+        <item>2초</item>
+        <item>3초</item>
+        <item>4초</item>
+        <item>5초</item>
+    </string-array>
+    <string-array name="spinner_insert_card_time">
+        <item>30초</item>
+        <item>60초</item>
+        <item>없음</item>
+    </string-array>
+    <string-array name="spinner_new_app_noti">
+        <item>사용</item>
+        <item>사용안함</item>
+    </string-array>
+    <string-array name="spinner_use_bmpsign">
+        <item>사용안함</item>
+        <item>사용</item>
+    </string-array>
+
+    <!-- 특수기능_화면 -->
+    <string-array name="spinner_use_fallback">
+        <item>미사용</item>
+        <item>사용</item>
+    </string-array>
+
+</resources>

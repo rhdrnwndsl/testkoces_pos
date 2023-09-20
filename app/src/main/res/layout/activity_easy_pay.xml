@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".EasyPayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/titlebg_gradient"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/toplogo1" />
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/easy_linear_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_trade_money" />
+
+                    <EditText
+                        android:id="@+id/easy_edt_money"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="6"
+                        android:background="@drawable/rectangle"
+                        android:ems="10"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        tools:ignore="TouchTargetSizeCheck" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:text="@string/txt_won" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/easy_linear_txf"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_tax_free" />
+
+                    <EditText
+                        android:id="@+id/easy_edt_txf"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="6"
+                        android:background="@drawable/rectangle"
+                        android:ems="10"
+                        android:maxLength="11"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:inputType="number" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:text="@string/txt_won" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_original_money" />
+
+                    <TextView
+                        android:id="@+id/easy_tvw_money"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="0"
+                        android:textAlignment="textEnd" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:text="@string/txt_won" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_tax_money" />
+
+                    <TextView
+                        android:id ="@+id/easy_tvw_vat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="0"
+                        android:textAlignment="textEnd" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:text="@string/txt_won" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/easy_linear_svc_auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_service_money" />
+
+                    <TextView
+                        android:id ="@+id/easy_tvw_svc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="0"
+                        android:textAlignment="textEnd" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:text="@string/txt_won" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/easy_linear_svc_manual"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_service_money" />
+
+                    <EditText
+                        android:id="@+id/easy_edt_svc"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="6"
+                        android:background="@drawable/rectangle"
+                        android:ems="10"
+                        android:maxLength="11"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:inputType="number" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:text="@string/txt_won" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="@string/txt_totalmoney" />
+
+                    <TextView
+                        android:id ="@+id/easy_tvw_totalmoney"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="0"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textAlignment="textEnd" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="@string/txt_won" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_installment_select" />
+
+                    <Button
+                        android:id="@+id/easy_btn_no_install"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/segmentbtnleft_normal"
+                        android:textColor="#ffffff"
+                        android:text="일시불" />
+
+                    <Button
+                        android:id="@+id/easy_btn_install"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:background="@drawable/segmentbtnright_out"
+                        android:textColor="#0f74fa"
+                        android:text="할부" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/easy_linear_installment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/txt_installment_months" />
+
+                    <EditText
+                        android:id="@+id/easy_edt_installment"
+                        android:layout_width="0dp"
+                        android:layout_height="44dp"
+                        android:layout_weight="7"
+                        android:background="@drawable/rectangle"
+                        android:ems="10"
+                        android:maxLength="2"
+                        android:textAlignment="textEnd"
+                        android:textColor="#000000"
+                        android:inputType="number" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/easy_btn_pay"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button211221"
+                        android:text="@string/txt_easy_pay"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+            <!-- 내부테스트용버튼 지우면 활성화할것
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+                -->
+            <!-- 내부테스트용 버튼 -->
+            <Button
+                android:id="@+id/easy_btn_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_goto_main"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/easy_btn_store_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="0.33"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_store_info"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/easy_btn_setting"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.34"
+                android:background="@drawable/button211221"
+                android:text="@string/btn_settiong"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

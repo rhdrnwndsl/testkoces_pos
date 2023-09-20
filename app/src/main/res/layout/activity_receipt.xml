@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/a_receipt_detail_bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true">
+
+        <!-- 결제 취소 -->
+        <Button
+            android:id="@+id/txt_receipt_cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/btn_cancel_payment"
+            />
+
+        <!-- 하단 버튼 -->
+        <LinearLayout
+            android:id="@+id/txt_receipt_receiptLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_receipt_cancelBtn"
+            android:orientation="horizontal">
+
+            <!-- 영수증 출력 -->
+            <Button
+                android:id="@+id/txt_receipt_detail_printBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_print_receipt"
+                />
+
+            <View
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <!-- 영수증 보내기 -->
+            <Button
+                android:id="@+id/txt_receipt_detail_sendBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_send_receipt"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/a_receipt_detail_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/a_receipt_detail_bottomLayout"
+        android:layout_marginBottom="10dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="20dp"
+        android:background="@android:color/white"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+local.properties
+.idea/caches/
+.idea/codeStyles/
+.idea/libraries/
+gradle.xml
+koces_pos.iml
+misc.xml
+modules.xml
+runConfigurations.xml
+vcs.xml
+.gradle/
+app/app.iml
+app/build
+.idea/.name
+./app/app.iml

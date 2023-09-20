@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resource>
+    <usb-device vendor-id="1027" product-id="24577" /> <!-- 0x6001: FT232R -->
+    <usb-device vendor-id="1027" product-id="24597" /> <!-- 0x6015: FT2232H -->
+<!--    <usb-device vendor-id="4660" product-id="257" /> &lt;!&ndash; 0x6015: FT2232H &ndash;&gt;-->
+    <usb-device vendor-id="1003" product-id="251" />
+<!--    <usb-device vendor-id="2004" product-id="257" />-->
+<!--        <usb-device vendor-id="1003" product-id="257" />-->
+<!--    <usb-device vendor-id="1003" product-id="251" />-->
+</resource>

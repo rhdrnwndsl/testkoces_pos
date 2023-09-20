@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".DeviceActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B7DEE8"
+            android:gravity="center_vertical"
+            android:text="@string/txt_device_title"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/txt_trade_option"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/txt_trade_option"
+            android:textSize="15sp" />
+        <Spinner
+            android:id="@+id/spinner_trade_option"
+            android:entries="@array/spinner_trade_option"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"/>
+
+        <Button
+            android:id="@+id/btn_autodetect_device"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:text="장치자동인식" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <TextView
+            android:id="@+id/txt_card_reader"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/txt_card_reader"
+            android:textSize="15sp" />
+        <Spinner
+            android:id="@+id/spinner_card_reader"
+            android:entries="@array/spinner_card_reader"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"/>
+        <Button
+            android:id="@+id/btn_cardreader_connect_check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:text="@string/btn_connect_check" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txt_multi_pad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="패드 관련 설정(장치 종류 , 주소 설정) "
+            android:textSize="15sp" />
+        <!--
+        <Spinner
+            android:id="@+id/spinner_multipad"
+            android:entries="@array/spinner_multipad"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+            -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Spinner
+            android:id="@+id/spinner_padType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:entries="@array/spinner_padType"
+            android:gravity="center_vertical" />
+
+        <Spinner
+            android:id="@+id/spinner_signpad"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:entries="@array/spinner_signpad"
+            android:gravity="center_vertical"
+            android:textAlignment="center" />
+        <Button
+            android:id="@+id/btn_sign_connect_check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:text="@string/btn_connect_check" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <!--
+        <TextView
+            android:id="@+id/txt_pad_size"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:text="@string/txt_pad_size"
+            android:textSize="15sp" />
+        <Spinner
+            android:id="@+id/spinner_padsize"
+            android:entries="@array/spinner_padsize"
+            android:layout_width="0dp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" />
+            -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:orientation="horizontal"
+        android:weightSum="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/btn_key_reset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/btn_key_reset" />
+        <Button
+            android:id="@+id/btn_classfi_check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/btn_classfi_check" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <!--
+        <Button
+            android:id="@+id/btn_upgrade_reader"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/btn_upgrade_reader" />
+        -->
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="@string/btn_save" />
+    </LinearLayout>
+
+</LinearLayout>
